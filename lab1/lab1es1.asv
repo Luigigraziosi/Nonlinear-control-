@@ -105,20 +105,20 @@ plot3(ep(1,3),ep(2,3),ep(3,3), 'co', 'MarkerSize',3)
 
 %% Excercise 4
 
-eig_des = [-5, -10, -7.5]'
+eig_des = [-10, -20, -15]'
 equilibrium_point = ep(:,1)';
-%A1= [10/7 10 0; 1 -1 1; 0 -100/7 0]
+A1= [10/7 10 0; 1 -1 1; 0 -100/7 0]
 B =[0 1 0]'
-K = place(A1, B, eig_des)
-%K = -K;
+K = place(A1,B,eig_des)
+
 open("chuasimcontrol")
 res_c = sim("chuasimcontrol")
 stable_time = res_c.chuaOutStable.time;
 stable_data = res_c.chuaOutStable.data;
-hold off
+
 figure(4)
 plot3(stable_data(:,1), stable_data(:,2), stable_data(:,3))
 xlabel('X')
 ylabel('Y')
 zlabel('Z')
-
+hold on
