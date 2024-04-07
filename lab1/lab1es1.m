@@ -14,7 +14,7 @@ x0 = 0.1*randn(3,1);
 
 %% Implementation
 
-%open("chuasim")
+open("chuasim")
 res = sim("chuasim");
 time = res.chuaOut.Time;
 
@@ -111,7 +111,7 @@ equilibrium_point = ep(:,1)';
 B =[0 1 0]'
 K = place(A1, B, eig_des)
 %K = -K;
-open("chuasimcontrol")
+%open("chuasimcontrol")
 res_c = sim("chuasimcontrol")
 stable_time = res_c.chuaOutStable.time;
 stable_data = res_c.chuaOutStable.data;
