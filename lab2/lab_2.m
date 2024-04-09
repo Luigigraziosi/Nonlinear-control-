@@ -10,7 +10,7 @@ u=sym('u',[1 1],'real');
 
 a=10.4;
 b=16.5;
-R=1;
+R=0.1;
 q=-1.16*x(1)+0.041*x(1)^3;
 
 % figure
@@ -85,7 +85,7 @@ nexttile;
 plot(time, state3)
 hold off
 
-R= 0;
+R=0;
 res = sim('lab_2a')
 time = res.resulting.Time;
 data1 = res.resulting.Data(:,1);
