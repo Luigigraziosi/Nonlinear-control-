@@ -55,7 +55,7 @@ x = a * (x2 - x1 - p);
 y = x1-x2 + x3 + u1;
 z = -b*x2 - 0*x3;
 
-A = jacobian([x,y,z],[x1,x2,x3]);
+A = jacobian([x,y,z],[x1,x2,x3])
 A1 = double(subs(A, [x1, x2, x3], ep(:,1)'));
 A2 = double(subs(A, [x1, x2, x3], ep(:,2)'));
 A3 = double(subs(A, [x1, x2, x3], ep(:,3)'));
@@ -64,6 +64,7 @@ B = jacobian([x,y,z], u1)
 B1 = double(subs(B, [u1],u));
 B2 = double(subs(B, [u1], u));
 B3 = double(subs(B, [u1], u));
+
 
 eig1 = eig(A1);
 eig2 = eig(A2);

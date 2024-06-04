@@ -37,7 +37,7 @@ matlabFunction(xd,'File','fg_chua','Vars',{[u;x]});
 %% Feedback linearization 
 
 [u,mu,ga]=io_fl(f,g,h,'chua')
-%return
+
 
 %% Linear controller 
 
@@ -60,6 +60,7 @@ x0=randn(3,1)*0;
 
 %open('lab_2a')
 res = sim('lab_2a')
+%return 
 time = res.resulting.Time;
 data1 = res.resulting.Data(:,1);
 data2 = res.resulting.Data(:,2);
