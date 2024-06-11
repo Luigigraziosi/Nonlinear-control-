@@ -1,1 +1,1 @@
-This directory contains the curricular projects of the Nonlinear Control course. The Course is divided in two parts, the first based on Non-linear controller and the second bases on real applications on aircrafts and spacecraft.
+This directory contains the curricular projects of the Nonlinear control and aerospace applications course. The Course is divided in two parts, the first based on Non-linear controller and the second bases on real applications on aircrafts and spacecraft.
